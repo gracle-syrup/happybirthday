@@ -1,0 +1,36 @@
+<section class="py-3 text-center container">
+    <div class="row py-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h5 class="lead">Since I cannot decide what to give you for your birthday, I'll let you pick it yourself</h5>
+        </div>
+    </div>
+</section>
+
+<div class="container ">
+    <div class="d-flex justify-content-center ">
+        <canvas id="wheel" style="height: 30rem;"></canvas>
+    </div>
+    <div class="d-flex justify-content-center" style="padding: 2.5rem 0;">
+        <button type="button" class="btn btn-warning" onclick="spinWheel()" style="height: 3rem;">Let's draw</button>
+    </div>
+</div>
+
+<script>
+
+    var settings = {
+    el: '#wheel',
+    members: ['Strawberry', 'Salmon', 'Airpods', 'Matcha', 'Fitbit', 'Earth coupons', '200 baht', 'Vans'],
+    colors: ['#abf5c9', '#c1dbf5', '#abf5c9', '#c1dbf5', '#abf5c9','#c1dbf5', '#abf5c9', '#c1dbf5'],
+    radius: 230
+    };
+
+    var wheel = new PrizeWheel(settings)
+
+    wheel.init();
+    const spinWheel = function(){
+        wheel.spin(function(member) {
+        alert(member)
+        })
+    }
+    
+</script>

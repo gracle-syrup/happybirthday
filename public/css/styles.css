@@ -1,0 +1,84 @@
+body {
+    background:peachpuff;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background: salmon;
+}
+
+.logo {
+    margin-right: 2%;
+}
+
+.neon {
+    background: black;
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png");
+    height: 25rem;
+}
+
+.neonText {
+    font-family: 'Yellowtail', cursive;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+  }
+
+  @keyframes pulsate {
+    
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #5271ff,
+        0 0 80px #5271ff,
+        0 0 90px #5271ff,ย
+        0 0 100px #5271ff,
+        0 0 150px #5271ff;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+h1 {
+    font-size: 5.2rem;
+    animation: pulsate 2.5s infinite alternate;     
+}
+
+h2 {
+    font-size: 4.8rem;
+    animation: pulsate 2.5s infinite alternate;     
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.strawberry {
+    background-image: url("../img/strawberry.jpeg") ;
+    height: 9rem;
+    background-size: cover;
+}
+
+.salmon {
+    background-image: url("../img/salmon.jpg") ;
+    height: 9rem;
+    background-size: cover;
+}
+
+.card-text {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    
+}
