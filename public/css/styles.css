@@ -82,3 +82,9 @@ h2 {
     font-size: 1.3rem;
     
 }
+
+.linebreak {
+    border-bottom: black 2px;
+    width: 100%;
+    height: 10px;
+}
